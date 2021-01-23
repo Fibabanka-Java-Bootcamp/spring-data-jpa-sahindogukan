@@ -17,6 +17,12 @@ public class App
 
         CategoryService categoryService = (CategoryService) appContext.getBean("categoryService");
         categoryService.categoryOperations();
+        
+        AuthorService authorService = (AuthorService) appContext.getBean("authorService");
+        categoryService.categoryOperations();
+
+        BookService bookService = (BookService) appContext.getBean("bookService");
+        categoryService.categoryOperations();
 
         appContext.close();
     }
